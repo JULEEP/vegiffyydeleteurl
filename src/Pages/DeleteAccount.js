@@ -13,7 +13,7 @@ const DeleteAccount = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5058/api/deleteaccount',
+        'https://veggifybackend.onrender.com/api/deleteaccount',
         { email, reason }
       );
       setMessage(response.data.message);

@@ -13,7 +13,7 @@ const ConfirmDeleteAccount = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:5058/api/confirm-delete-account/${token}`
+          `https://veggifybackend.onrender.com/api/confirm-delete-account/${token}`
         );
 
        if (response.status === 200) {
